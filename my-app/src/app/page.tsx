@@ -1,21 +1,23 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Flex, Grid, Text } from '@radix-ui/themes';
+import Image from 'next/image';
+
+import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
+    <main>
+      <Flex justify={'between'} align={'center'}>
+        <Text>
           Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
+          <code>src/app/page.tsx</code>
+        </Text>
+        <Flex align={'center'}>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
+            By{' '}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -25,21 +27,20 @@ export default function Home() {
               priority
             />
           </a>
-        </div>
-      </div>
+        </Flex>
+      </Flex>
 
-      <div className={styles.center}>
+      <Flex justify={'center'} align={'center'}>
         <Image
-          className={styles.logo}
           src="/next.svg"
           alt="Next.js Logo"
           width={180}
           height={37}
           priority
         />
-      </div>
+      </Flex>
 
-      <div className={styles.grid}>
+      <Grid columns={'4'} gap={'2'}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
@@ -89,7 +90,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </Grid>
     </main>
   );
 }
