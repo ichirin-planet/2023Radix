@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "check-types": "tsc --noEmit",
     "lint": "next lint --dir src",
     "lint:fix": "yarn lint --fix",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'"
+    "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json}'",
+    "check-all": "yarn check-types && yarn lint:fix && yarn format"
   },
   "dependencies": {
     "@radix-ui/themes": "^1.0.0",
