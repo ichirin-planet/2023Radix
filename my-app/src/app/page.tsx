@@ -1,8 +1,8 @@
 import { Flex, Grid, Text } from '@radix-ui/themes';
 import Image from 'next/image';
 
-import { PrimaryButton } from './component/ui/button/PrimaryButton';
 import styles from './page.module.css';
+import { PrimaryButton } from './ui/button/PrimaryButton';
 
 export default function Home() {
   return (
