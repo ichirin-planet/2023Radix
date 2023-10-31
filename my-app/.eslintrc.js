@@ -1,12 +1,5 @@
 module.exports = {
-  extends: [
-    'next',
-    'next/core-web-vitals',
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:import/warnings',
-    'prettier',
-  ],
+  extends: ['next/core-web-vitals', 'plugin:import/warnings', 'prettier'],
   parser: '@typescript-eslint/parser',
   plugins: ['import', 'unused-imports', '@typescript-eslint'],
   root: true,
