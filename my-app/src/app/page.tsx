@@ -1,6 +1,7 @@
 import { Flex, Grid, Text } from '@radix-ui/themes';
 import Image from 'next/image';
 
+import { PrimaryButton } from './component/ui/button/PrimaryButton';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -91,6 +92,9 @@ export default function Home() {
           </p>
         </a>
       </Grid>
+      <PrimaryButton>
+        <Text as="span">ボタン</Text>
+      </PrimaryButton>
     </main>
   );
 }
