@@ -5,8 +5,6 @@ import Link from 'next/link';
 
 import type { Metadata } from 'next';
 
-import '@radix-ui/themes/styles.css';
-
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
