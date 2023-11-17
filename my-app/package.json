@@ -43,5 +43,8 @@
     "eslint-plugin-unused-imports": "^3.0.0",
     "prettier": "^3.0.2",
     "storybook": "^7.5.2"
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1"
   }
 }
